@@ -993,8 +993,7 @@ public class MethodGen extends FieldGenOrMethodGen {
 
         public BranchTarget pop() {
             if (!branchTargets.empty()) {
-                final BranchTarget bt = branchTargets.pop();
-                return bt;
+                return branchTargets.pop();
             }
             return null;
         }
